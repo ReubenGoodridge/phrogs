@@ -1,0 +1,266 @@
+ffmpeg version 4.4-essentials_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev6, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Reuben/AppData/Local/Temp/KritaFFmpegProgress.ocmNwn'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '25'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame%04d.png'.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'palettegen'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'D:/Phrogs The Game/assets/images & gifs/phrog loading/palette.png' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Reuben/AppData/Local/Temp/KritaFFmpegProgress.ocmNwn.
+[file @ 000002208659e200] Setting default whitelist 'file,crypto,data'
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url D:/Phrogs The Game/assets/images & gifs/phrog loading/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 25.
+Successfully parsed a group of options.
+Opening an input file: D:/Phrogs The Game/assets/images & gifs/phrog loading/frame%04d.png.
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0000.png' for reading
+[file @ 00000220865e2900] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865eab00] Statistics: 28832 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0001.png' for reading
+[file @ 00000220865f1e80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 28807 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0002.png' for reading
+[file @ 00000220865f1e80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 28962 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0003.png' for reading
+[file @ 00000220865f2080] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 28953 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0004.png' for reading
+[file @ 00000220865f2280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 28940 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0005.png' for reading
+[file @ 00000220865f2480] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 28751 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0006.png' for reading
+[file @ 00000220865f3580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 28765 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0007.png' for reading
+[file @ 00000220865f3640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 29132 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0008.png' for reading
+[file @ 00000220865f3640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 29488 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0009.png' for reading
+[file @ 00000220865f3640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 29880 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0010.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30015 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0011.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30038 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0012.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30318 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0013.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30061 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0014.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30225 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0015.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30270 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0016.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30030 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0017.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30197 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0018.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30302 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0019.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30132 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0020.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30257 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0021.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 29919 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0022.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30150 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0023.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30121 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0024.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 29961 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0025.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30121 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0026.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30150 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0027.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 29919 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0028.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30257 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0029.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865ea980] Statistics: 30132 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0030.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 30303 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0031.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 30205 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0032.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 30030 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0033.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 30270 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0034.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 30225 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0035.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 30154 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0036.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 30290 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0037.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 29995 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0038.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000220865f3a40] Statistics: 30013 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0039.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 29863 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0040.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 29501 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0041.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 29340 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0042.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 28861 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0043.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 29115 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0044.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 29038 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0045.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 28967 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0046.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 28961 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0047.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 28959 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0048.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 28826 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0049.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 28832 bytes read, 0 seeks
+[image2 @ 00000220865ded80] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame0050.png' for reading
+[file @ 0000022086638dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022086bccec0] Statistics: 28832 bytes read, 0 seeks
+Input #0, image2, from 'D:/Phrogs The Game/assets/images & gifs/phrog loading/frame%04d.png':
+  Duration: 00:00:02.04, start: 0.000000, bitrate: N/A
+  Stream #0:0, 51, 1/25: Video: png, 1 reference frame, rgba(pc), 500x500 [SAR 11811:11811 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url D:/Phrogs The Game/assets/images & gifs/phrog loading/palette.png.
+Applying option vf (set video filters) with argument palettegen.
+Successfully parsed a group of options.
+Opening an output file: D:/Phrogs The Game/assets/images & gifs/phrog loading/palette.png.
+Successfully opened the file.
+detected 4 logical cores
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> png (native))
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 4 times
+[graph 0 input from stream 0:0 @ 00000220865f2000] Setting 'video_size' to value '500x500'
+[graph 0 input from stream 0:0 @ 00000220865f2000] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 00000220865f2000] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 0:0 @ 00000220865f2000] Setting 'pixel_aspect' to value '11811/11811'
+[graph 0 input from stream 0:0 @ 00000220865f2000] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 0:0 @ 00000220865f2000] w:500 h:500 pixfmt:rgba tb:1/25 fr:25/1 sar:11811/11811
+[format @ 000002208710a140] Setting 'pix_fmts' to value 'rgb24|rgba|rgb48be|rgba64be|pal8|gray|ya8|gray16be|ya16be|monob'
+[auto_scaler_0 @ 000002208710b780] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 000002208710b780] w:iw h:ih flags:'bicubic' interl:0
+[Parsed_palettegen_0 @ 00000220865f1e80] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_palettegen_0'
+[auto_scaler_1 @ 0000022086e44000] Setting 'flags' to value 'bicubic'
+[auto_scaler_1 @ 0000022086e44000] w:iw h:ih flags:'bicubic' interl:0
+[format @ 000002208710a140] auto-inserting filter 'auto_scaler_1' between the filter 'Parsed_palettegen_0' and the filter 'format'
+[AVFilterGraph @ 00000220865e3a80] query_formats: 4 queried, 1 merged, 2 already done, 0 delayed
+[auto_scaler_1 @ 0000022086e44000] picking rgba out of 10 ref:bgra alpha:1
+[swscaler @ 0000022086fd1fc0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 000002208710b780] w:500 h:500 fmt:rgba sar:11811/11811 -> w:500 h:500 fmt:bgra sar:1/1 flags:0x4
+[swscaler @ 0000022086fdef40] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 0000022086e44000] w:16 h:16 fmt:bgra sar:1/1 -> w:16 h:16 fmt:rgba sar:1/1 flags:0x4
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 50 times
+[Parsed_palettegen_0 @ 00000220865f1e80] 255(+1) colors generated out of 21421 colors; ratio=0.011904
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF287A77
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF297B77
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF2A7B77
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF508D7C
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF749D82
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF7CA183
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF85A584
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF87A685
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF89A785
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF8CA886
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FF92AB87
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FFC8B47B
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FFC9A176
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FFC9A276
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FFC9A577
+[Parsed_palettegen_0 @ 00000220865f1e80] Dupped color: FFC9AA78
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+Output #0, image2, to 'D:/Phrogs The Game/assets/images & gifs/phrog loading/palette.png':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0, 0, 1/25: Video: png, 1 reference frame, rgba(pc, progressive), 16x16 (0x0) [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 png
+Clipping frame in rate conversion by 0.000008
+frame=    1 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[out_0_0 @ 0000022086b89980] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+[image2 @ 0000022086658280] Opening 'D:/Phrogs The Game/assets/images & gifs/phrog loading/palette.png' for writing
+[file @ 0000022086e43300] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000022087316980] Statistics: 0 seeks, 1 writeouts
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.418x    
+[AVIOContext @ 00000220865dec40] Statistics: 0 seeks, 2 writeouts
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (D:/Phrogs The Game/assets/images & gifs/phrog loading/frame%04d.png):
+  Input stream #0:0 (video): 51 packets read (1513665 bytes); 51 frames decoded; 
+  Total: 51 packets (1513665 bytes) demuxed
+Output file #0 (D:/Phrogs The Game/assets/images & gifs/phrog loading/palette.png):
+  Output stream #0:0 (video): 1 frames encoded; 1 packets muxed (819 bytes); 
+  Total: 1 packets (819 bytes) muxed
+51 frames successfully decoded, 0 decoding errors
