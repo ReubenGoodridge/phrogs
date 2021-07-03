@@ -7,12 +7,21 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 const renderer = new THREE.WebGLRenderer()
 renderer.setSize(window.innerWidth, window.innerHeight)
 document.body.appendChild(renderer.domElement)
+renderer.setClearColor(0x6a994e)
 
+var mixer
+var clock = new THREE.Clock()
+
+// Load Phrog Model
 const loader = new GLTFLoader()
 var obj
 loader.load('phrog.gltf', function (gltf) {
+  mixer = new THREE.AnimationMixer(gltf.scene)
   obj = gltf.scene
+  var action = mixer.clipAction(gltf.animations[0])
   scene.add(gltf.scene)
+  const timer = Math.random() * 200
+  setTimeout(action.play(), timer)
 })
 
 const light = new THREE.HemisphereLight(0xffffff, 0x000000, 2)
@@ -24,6 +33,8 @@ controls.update()
 
 function animate () {
   requestAnimationFrame(animate)
+  var delta = clock.getDelta()
+  if (mixer) mixer.update(delta)
   renderer.render(scene, camera)
 }
 animate()
