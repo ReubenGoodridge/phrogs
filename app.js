@@ -13,28 +13,40 @@ var mixer
 var clock = new THREE.Clock()
 
 // Load Phrog Model
-const loader = new GLTFLoader()
+const basePhrog = new GLTFLoader()
 var obj
-loader.load('phrog.gltf', function (gltf) {
+basePhrog.load('assets/models/Phrogs/base phrog/phrog.gltf', function (gltf) {
   mixer = new THREE.AnimationMixer(gltf.scene)
   obj = gltf.scene
   var action = mixer.clipAction(gltf.animations[0])
   scene.add(gltf.scene)
-  const timer = Math.random() * 200
-  setTimeout(action.play(), timer)
+  action.play()
+})
+
+const stonePhrog = new GLTFLoader()
+var stonePhrogMixer
+var stonePhrogObj
+stonePhrog.load('assets/models/Phrogs/stone phrog/stone-phrog.glb', function (gltf) {
+  stonePhrogMixer = new THREE.AnimationMixer(gltf.scene)
+  stonePhrogObj = gltf.scene
+  var action = stonePhrogMixer.clipAction(gltf.animations[0])
+  scene.add(gltf.scene)
+  stonePhrogObj.position.x -= 5
+  action.play()
 })
 
 const light = new THREE.HemisphereLight(0xffffff, 0x000000, 2)
 scene.add(light)
 
 const controls = new OrbitControls(camera, renderer.domElement)
-camera.position.set(0, 5, 5)
+camera.position.set(5, 5, 5)
 controls.update()
 
 function animate () {
   requestAnimationFrame(animate)
   var delta = clock.getDelta()
   if (mixer) mixer.update(delta)
+  if (stonePhrogMixer) stonePhrogMixer.update(delta)
   renderer.render(scene, camera)
 }
 animate()
