@@ -31,24 +31,6 @@ renderer.setClearColor(0x6a994e)
 var mixer
 var clock = new THREE.Clock()
 
-// Load Phrog Models
-const basePhrog = new GLTFLoader()
-var obj
-basePhrog.load('assets/models/Phrogs/base phrog/phrog.gltf', function (gltf) {
-  mixer = new THREE.AnimationMixer(gltf.scene)
-  obj = gltf.scene
-  scene.add(obj)
-  var action = mixer.clipAction(gltf.animations[0])
-  action.loop = THREE.LoopOnce
-
-  // Play animation randomly every 1-10s.
-  setInterval(() => {
-    action
-      .reset()
-      .play()
-  }, Math.random() * 9000 + 1000)
-})
-
 // Create random move points
 var mPoints = []
 var mPointGeometry = new THREE.BoxGeometry(0.5, 0.5, 0.5)
@@ -60,19 +42,48 @@ for (var i = 0; i < 20; i++) {
   mPoints.push(mPoint)
 }
 
+// Choose starting point for phrog
+var startPoint = mPoints[Math.floor(Math.random() * mPoints.length)]
+
+// Load Phrog Models
+var phrogPos = new THREE.Vector3()
+const basePhrog = new GLTFLoader()
+let phrog
+basePhrog.load('assets/models/Phrogs/base phrog/phrog.gltf', function (gltf) {
+  mixer = new THREE.AnimationMixer(gltf.scene)
+  phrog = gltf.scene
+  phrog.position.x = startPoint.position.x
+  phrog.position.z = startPoint.position.z
+  phrogPos.x = phrog.position.x
+  phrogPos.z = phrog.position.z
+  scene.add(phrog)
+  var action = mixer.clipAction(gltf.animations[0])
+  action.loop = THREE.LoopOnce
+
+  // Play animation randomly every 1-10s.
+  setInterval(() => {
+    action
+      .reset()
+      .play()
+  }, Math.random() * 9000 + 1000)
+})
+
 // Add Food
 const foodGeometry = new THREE.SphereGeometry()
 const foodColour = new THREE.MeshBasicMaterial({ color: 0xddbea9 })
 const food = new THREE.Mesh(foodGeometry, foodColour)
-food.position.y += 5
-var foodY = food.position.y
-food.userData.draggable = true
-food.userData.name = 'food'
 
+// Pick random point for food
+var foodPoint = new THREE.Vector3()
 document.getElementById('food').onclick = feed
 let fed = false
 function feed () {
   if (!fed) {
+    const foodPos = mPoints[Math.floor(Math.random() * mPoints.length)]
+    foodPoint.x = foodPos.position.x
+    foodPoint.z = foodPos.position.z
+    food.position.x = foodPoint.x
+    food.position.z = foodPoint.z
     scene.add(food)
     fed = true
   } else {
@@ -90,13 +101,7 @@ controls.update()
 function animate () {
   requestAnimationFrame(animate)
   var delta = clock.getDelta()
-  if (fed && obj.position.y <= foodY) {
-    foodY -= 0.01
-    food.position.y -= 0.01
-  } else {
-    scene.remove(food)
-  }
-  // if (stonePhrogMixer) stonePhrogMixer.update(delta)
+  if (mixer) mixer.update(delta)
   renderer.render(scene, camera)
 }
 animate()
