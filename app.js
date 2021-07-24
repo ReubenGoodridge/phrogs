@@ -118,6 +118,7 @@ scene.add(light)
 
 const controls = new OrbitControls(camera, renderer.domElement)
 camera.position.set(-2.427074329283623, 23.32717459671259, 70.114230367885504)
+camera.lookAt(phrogPos.x, phrogPos.y, phrogPos.z)
 controls.update()
 
 function animate () {
