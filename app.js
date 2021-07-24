@@ -38,7 +38,6 @@ for (var i = 0; i < 20; i++) {
   var mPoint = new THREE.Mesh(mPointGeometry, new THREE.MeshBasicMaterial({ color: 0xf0f0f0 }))
   mPoint.position.x = Math.random() * 100 - 50
   mPoint.position.z = Math.random() * 80 - 40
-  scene.add(mPoint)
   mPoints.push(mPoint)
 }
 
@@ -79,7 +78,10 @@ document.getElementById('food').onclick = feed
 let fed = false
 function feed () {
   if (!fed) {
-    const foodPos = mPoints[Math.floor(Math.random() * mPoints.length)]
+    let foodPos = mPoints[Math.floor(Math.random() * mPoints.length)]
+    if (foodPos === phrogPos) {
+      foodPos = mPoints[Math.floor(Math.random() * mPoints.length)]
+    }
     foodPoint.x = foodPos.position.x
     foodPoint.z = foodPos.position.z
     food.position.x = foodPoint.x
@@ -91,16 +93,39 @@ function feed () {
   }
 }
 
+// Create a simple movement function
+function move (destination) {
+  if (destination.x > phrogPos.x) {
+    phrogPos.x += 0.1
+    phrog.position.x += 0.1
+  }
+  if (destination.x < phrogPos.x) {
+    phrogPos.x -= 0.1
+    phrog.position.x -= 0.1
+  }
+  if (destination.z < phrogPos.z) {
+    phrogPos.z -= 0.1
+    phrog.position.z -= 0.1
+  }
+  if (destination.z > phrogPos.z) {
+    phrogPos.z += 0.1
+    phrog.position.z += 0.1
+  }
+}
+
 const light = new THREE.HemisphereLight(0xa3b18a, 0x3a5a40, 2)
 scene.add(light)
 
 const controls = new OrbitControls(camera, renderer.domElement)
-camera.position.set(-2.427074329283623, 23.32717459671259, 56.114230367885504)
+camera.position.set(-2.427074329283623, 23.32717459671259, 70.114230367885504)
 controls.update()
 
 function animate () {
   requestAnimationFrame(animate)
   var delta = clock.getDelta()
+  if (fed && phrogPos !== foodPoint) {
+    move(foodPoint)
+  }
   if (mixer) mixer.update(delta)
   renderer.render(scene, camera)
 }
