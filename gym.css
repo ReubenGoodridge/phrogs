@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  background: #5da9e9;
+}
+
+canvas {
+  display: block;
+  border: none;
+}
+
+#strengthText {
+  position: absolute;
+  display: block;
+  z-index: 99;
+  left: 2%;
+  top: 2%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}

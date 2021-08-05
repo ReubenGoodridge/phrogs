@@ -1,6 +1,7 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js'
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js'
+var strength = localStorage.getItem('strength')
 
 // Detecting if page is visible
 let visible
@@ -90,7 +91,13 @@ function feed () {
     const Midpoint = new THREE.Vector3()
     Midpoint.x = midX
     Midpoint.z = midZ
-    Midpoint.y = 50
+    strength = localStorage.getItem('strength')
+    console.log(strength)
+    if (strength === 0) {
+      Midpoint.y = 0.5
+    } else {
+      Midpoint.y = 10 + (strength / 2)
+    }
     // Create a tween to move to the food
     var position = { x: phrogPos.x, y: phrogPos.y, z: phrogPos.z }
     var destination = { x: foodPoint.x, z: foodPoint.z, y: foodPoint.y }
