@@ -31,7 +31,7 @@ function checkFirstVisit() {
 
     if (window.performance.navigation) {
         result=window.performance.navigation;
-        if (result==255){result=4} // 4 is my invention!
+        if (result==255){result=4}
     }
 
     if (window.performance.getEntriesByType("navigation")){
@@ -51,7 +51,7 @@ function checkFirstVisit() {
        if (p=='prerender'){
          result=3
          localStorage.clear()
-       } //3 is my invention!
+       }
     }
     return result;
 }

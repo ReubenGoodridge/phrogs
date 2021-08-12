@@ -25,12 +25,16 @@ var clock = new THREE.Clock()
 
 // Create random move points
 var mPoints = []
-var mPointGeometry = new THREE.BoxGeometry(0.5, 0.5, 0.5)
+var geometry = new THREE.DodecahedronGeometry(0.5)
 for (var i = 0; i < 20; i++) {
-  var mPoint = new THREE.Mesh(mPointGeometry, new THREE.MeshBasicMaterial({ color: 0xf0f0f0 }))
-  mPoint.position.x = Math.random() * 100 - 50
-  mPoint.position.z = Math.random() * 80 - 40
+  var mPoint = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: 0xadb5bd }))
+  mPoint.position.x = Math.random() * 50 - 25
+  mPoint.position.z = Math.random() * 40 - 20
   mPoints.push(mPoint)
+}
+
+for (var l = 0; l < 6; l++) {
+  scene.add(mPoints[Math.floor(Math.random() * mPoints.length)])
 }
 
 // Choose starting point for phrog
@@ -68,8 +72,10 @@ const food = new THREE.Mesh(foodGeometry, foodColour)
 var foodPoint = new THREE.Vector3()
 document.getElementById('food').onclick = feed
 let fed = false
+let feeding = false
 function feed () {
-  if (!fed) {
+  if (!fed && !feeding) {
+    feeding = true
     phrogPos.x = phrog.position.x
     phrogPos.y = phrog.position.y
     phrogPos.z = phrog.position.z
@@ -128,6 +134,7 @@ function feed () {
     })
     tweenA.onComplete(function () {
       scene.remove(food)
+      feeding = false
     })
     tweenA.start()
     tween.chain(tweenA)
@@ -141,7 +148,7 @@ const light = new THREE.HemisphereLight(0xa3b18a, 0x3a5a40, 2)
 scene.add(light)
 
 const controls = new OrbitControls(camera, renderer.domElement)
-camera.position.set(-2.427074329283623, 23.32717459671259, 60.114230367885504)
+camera.position.set(-1.71353716464, 12.1635872984, 30.5571151839)
 controls.update()
 
 function animate () {
